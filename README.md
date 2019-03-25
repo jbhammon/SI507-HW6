@@ -57,7 +57,6 @@ Below are a bunch of questions and indications of things to do. For each indicat
 
 ### Names of people you have worked with on this assignment
 * List everyone's names and uniqnames who have worked on this assignment with you, **including your own name, but make sure YOUR name is first and bold**
-* Like this:
 * **Jackson Hammond (jbhammon)**
 * Jen Foran (jlforan)
 * Noah Garcia (noahgarc)
@@ -79,7 +78,8 @@ Some JavaScript code
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
 
-A javascript comment for one line looks
+Comment for one line: //<comment content here>
+Comment for multiple lines: /* <comment content here \*/
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
 
