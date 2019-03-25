@@ -114,9 +114,11 @@ The background would be white (#ffffff) is there was no javascript on the page.
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
 
-There is a <style> tag after the <script> tag, and it defines some CSS that changes the appearance of <p> tags. Those grey boxes and borders are the result of that CSS. We could change the color from grey to blue by changing the value being given to the 'background-color' property from '#b3b3b3' to 'blue'. 
+There is a <style> tag after the <script> tag, and it defines some CSS that changes the appearance of <p> tags. Those grey boxes and borders are the result of that CSS. We could change the color from grey to blue by changing the value being given to the 'background-color' property from '#b3b3b3' to 'blue'.
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
+
+I noticed there was a javascript function defined, called copyFunction(), that was being called when the <li> tag containing 'University of Michigan' was copied. It added the text 'Go Blue!' to the innerHTML of an element with the ID 'cheer'. I created a second function, copyFunctionCanada(), that adds 'O Canada' to the innerHTML of the same tag. Then I added a call to the new function when the <li> element for McGill University is copied.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
@@ -131,11 +133,11 @@ function handleClick(){
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
 
-
+We're telling the browser to run the function handleClick() when the button is clicked by the user with the code ```onclick=handleClick()```. When that function runs it shows the user an alert with the text "hello", and that's why we see the popup when we click the "Wow" button.
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
 
-
+Note to self: done
 
 ### The next few questions address the `jquerylib_submit_example.html` file.
 

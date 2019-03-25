@@ -29,9 +29,18 @@
 		document.querySelector('#cheer').innerHTML += "Go blue!<br>"
 	}
 
+	function copyFunctionCanada(){
+		document.querySelector('#cheer').innerHTML += "O Canada!<br>"
+	}
+
 	function handleClick(){
 		alert("hello");
 	}
+
+	function equinoxClick(){
+		alert("March 20, 2019")
+	}
+	
 </script>
 <style>
 p{
@@ -63,7 +72,7 @@ p{
 	<ul>
 		<li>Kent State</li>
 		<li>University of Pittsburgh</li>
-		<li>McGill University</li>
+		<li oncopy='copyFunctionCanada()'>McGill University</li>
 		<li>California State University Long Beach</li>
 		<li oncopy="copyFunction()">University of Michigan</li>
 	</ul>
@@ -72,6 +81,8 @@ p{
 	</div>
 
 	<button onclick=handleClick() id="wow-button">Wow</button>
+
+	<button onclick=equinoxClick()>Spring Equinox 2019</button>
 
 </body>
 </html>
