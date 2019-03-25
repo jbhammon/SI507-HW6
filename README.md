@@ -96,17 +96,25 @@ We'd need to comment out line 12, which is ```alert("hello");```
 
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
 
-We can change how the 'innerHTML' is being changed on the first line of the function displayInformation(). Before it was changing the text in <h1> tags from 'A name or title goes here' to 'A name', but replacing 'A name' with 'Jackson Hammond' will display my name at the top of the page. 
+We can change how the 'innerHTML' is being changed on the first line of the function displayInformation(). Before it was changing the text in <h1> tags from 'A name or title goes here' to 'A name', but replacing 'A name' with 'Jackson Hammond' will display my name at the top of the page.
 
 * **What does the word `document` represent in this code? Explain briefly.**
+
+The word 'document' here is an object representing the HTML page the javascript is contained in. It gives us a way to for our javascript to interact with the elements and data on the page.
 
 * **What is happening in line 12 (
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
 
+The code is counting the number of <li> elements on the page, and then setting the value of the element with the ID 'items' equal to that count.
+
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
 
+The background would be white (#ffffff) is there was no javascript on the page.
+
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
+
+There is a <style> tag after the <script> tag, and it defines some CSS that changes the appearance of <p> tags. Those grey boxes and borders are the result of that CSS. We could change the color from grey to blue by changing the value being given to the 'background-color' property from '#b3b3b3' to 'blue'. 
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
 
