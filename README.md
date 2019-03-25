@@ -79,15 +79,24 @@ Some JavaScript code
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
 
 Comment for one line: //<comment content here>
-Comment for multiple lines: /* <comment content here \*/
+
+Comment for multiple lines: /* <comment content here> \*/
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
 
+Given the javascript we've seen in this assignment, the file it's contained in needs to be opened in a web browser. Then the browser interprets it, and runs it line by line.
+
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
+
+alert() and console.log() both seem similar to Python's 'print' function. You might use alert() if you need to present some kind of information to a user, because it creates a popup dialog box for them. However, a developer who needs to know what a variable's value is at a certain point in their code might use console.log() to print it's value to the browsers console.
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
 
+We'd need to comment out line 12, which is ```alert("hello");```
+
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
+
+We can change how the 'innerHTML' is being changed on the first line of the function displayInformation(). Before it was changing the text in <h1> tags from 'A name or title goes here' to 'A name', but replacing 'A name' with 'Jackson Hammond' will display my name at the top of the page. 
 
 * **What does the word `document` represent in this code? Explain briefly.**
 
