@@ -166,6 +166,9 @@ $(document).ready(function(){
     $("form").submit(function(event){
 ```
 
+They are some functions that should be immediately invoked. That code states that when the document is 'ready' is should run the code in the first set of {}. Then when a form is submitted the chunk of code in the very next set of {} should run, which does the input validation.
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
+
+	Note to self: done
