@@ -145,11 +145,19 @@ Note to self: done
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
 
+There is javascript that runs each time the form is submitted, and it inserts different HTML into the <div> with ID 'result' if the input was valid or not. If it wasn't valid the insert <p> tag is given the class 'error', and the page's CSS says that class should have red text. Similarly, if the input is valid the <p> tag gets the class 'good', and the CSS says that text should be blue.
+
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
+
+It helps define the filter we need to determine if the input is valid (if the input is no more than one word). It states a string should start with one or more alphabetic characters, and then nothing else after those one or more alphabetic characters.
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
 
+Javascript needs the code for each conditional to be contained in {}.
+
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
+
+That refers to the amount of time, 10000 miliseconds, it should take to run that code.
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
 
