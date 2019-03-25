@@ -96,7 +96,7 @@ We'd need to comment out line 12, which is ```alert("hello");```
 
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
 
-We can change how the 'innerHTML' is being changed on the first line of the function displayInformation(). Before it was changing the text in <h1> tags from 'A name or title goes here' to 'A name', but replacing 'A name' with 'Jackson Hammond' will display my name at the top of the page.
+We can change how the 'innerHTML' is being changed on the first line of the function displayInformation(). Before it was changing the text in ```<h1>``` tags from 'A name or title goes here' to 'A name', but replacing 'A name' with 'Jackson Hammond' will display my name at the top of the page.
 
 * **What does the word `document` represent in this code? Explain briefly.**
 
@@ -106,7 +106,7 @@ The word 'document' here is an object representing the HTML page the javascript 
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
 
-The code is counting the number of <li> elements on the page, and then setting the value of the element with the ID 'items' equal to that count.
+The code is counting the number of ```<li>``` elements on the page, and then setting the value of the element with the ID 'items' equal to that count.
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
 
@@ -114,11 +114,11 @@ The background would be white (#ffffff) is there was no javascript on the page.
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
 
-There is a <style> tag after the <script> tag, and it defines some CSS that changes the appearance of <p> tags. Those grey boxes and borders are the result of that CSS. We could change the color from grey to blue by changing the value being given to the 'background-color' property from '#b3b3b3' to 'blue'.
+There is a ```<style>``` tag after the <script> tag, and it defines some CSS that changes the appearance of ```<p>``` tags. Those grey boxes and borders are the result of that CSS. We could change the color from grey to blue by changing the value being given to the 'background-color' property from '#b3b3b3' to 'blue'.
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
 
-I noticed there was a javascript function defined, called copyFunction(), that was being called when the <li> tag containing 'University of Michigan' was copied. It added the text 'Go Blue!' to the innerHTML of an element with the ID 'cheer'. I created a second function, copyFunctionCanada(), that adds 'O Canada' to the innerHTML of the same tag. Then I added a call to the new function when the <li> element for McGill University is copied.
+I noticed there was a javascript function defined, called copyFunction(), that was being called when the ```<li>``` tag containing 'University of Michigan' was copied. It added the text 'Go Blue!' to the innerHTML of an element with the ID 'cheer'. I created a second function, copyFunctionCanada(), that adds 'O Canada' to the innerHTML of the same tag. Then I added a call to the new function when the ```<li>``` element for McGill University is copied.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
@@ -145,7 +145,7 @@ Note to self: done
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
 
-There is javascript that runs each time the form is submitted, and it inserts different HTML into the <div> with ID 'result' if the input was valid or not. If it wasn't valid the insert <p> tag is given the class 'error', and the page's CSS says that class should have red text. Similarly, if the input is valid the <p> tag gets the class 'good', and the CSS says that text should be blue.
+There is javascript that runs each time the form is submitted, and it inserts different HTML into the ```<div>``` with ID 'result' if the input was valid or not. If it wasn't valid the insert ```<p>``` tag is given the class 'error', and the page's CSS says that class should have red text. Similarly, if the input is valid the ```<p>``` tag gets the class 'good', and the CSS says that text should be blue.
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
 
